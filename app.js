@@ -40,8 +40,6 @@ async function searchImages() {
   page++;
   if (page > 1) {
     showMoreButton.style.display = "block";
-  } else {
-    showMoreButton.style.display = "none";
   }
 }
 
