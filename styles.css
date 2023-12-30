@@ -107,6 +107,7 @@ form {
   }
 }
 
+/*for smaller screens mobile phones*/
 @media screen and (max-width: 480px) {
   .search-result {
     width: 100%;
