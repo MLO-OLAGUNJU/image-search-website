@@ -114,6 +114,7 @@ form {
   }
 }
 
+/*for ipad pro*/
 @media screen and (max-width: 1114px) {
   .search-result {
     padding: 20px;
