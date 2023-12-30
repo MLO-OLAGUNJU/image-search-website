@@ -32,5 +32,25 @@ async function searchImages() {
     imageLink.href = result.links.html;
     imageLink.target = "_blank";
     imageLink.textContent = result.alt_description;
+
+    imageWrapper.appendChild(image);
+    imageWrapper.appendChild(imageLink);
+    imageWrapper.appendChild(imageWrapper);
   });
+  page++;
+  if (page > 1) {
+    showMoreButton.style.display = "block";
+  } else {
+    showMoreButton.style.display = "none";
+  }
 }
+
+formElement.addEventListener("submit", (theEvent) => {
+  theEvent.preventDefault();
+  page = 1;
+  searchImages();
+});
+
+showMoreButton.addEventListener("click", () => {
+  searchImages();
+});
